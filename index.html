@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AETHER CLINIC — 프리미엄 피부과</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Noto+Sans+KR:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <!-- lucide icons for minimal ui -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header id="main-header">
+    <div class="header-inner">
+      <!-- Top Row: Logo -->
+      <div class="header-top">
+        <h1 class="logo">
+          <a href="#">
+            <div class="logo-img"></div>
+          </a>
+        </h1>
+        <!-- Utility (Mobile Menu Button) still needs to be somewhere for mobile -->
+        <div class="util">
+          <button id="mobile-btn" class="mobile-toggle"><i data-lucide="menu"></i></button>
+        </div>
+      </div>
+
+      <!-- Bottom Row: Navigation -->
+      <nav class="gnb">
+        <ul id="gnb-list">
+          <li class="gnb-item">
+            <a href="#" class="depth1">병원 소개</a>
+            <ul class="depth2">
+              <li><a href="#">클리닉 철학</a></li>
+              <li><a href="#">의료진 소개</a></li>
+              <li><a href="#">첨단 장비 안내</a></li>
+              <li><a href="#">오시는 길</a></li>
+              <li><a href="#">내부 갤러리</a></li>
+            </ul>
+          </li>
+          <li class="gnb-item">
+            <a href="#" class="depth1">리프팅 센터</a>
+            <ul class="depth2">
+              <li><a href="#">울쎄라</a></li>
+              <li><a href="#">써마지 FLX</a></li>
+              <li><a href="#">슈링크 유니버스</a></li>
+              <li><a href="#">볼뉴머 리프팅</a></li>
+              <li><a href="#">실 리프팅</a></li>
+            </ul>
+          </li>
+          <li class="gnb-item">
+            <a href="#" class="depth1">스킨부스터</a>
+            <ul class="depth2">
+              <li><a href="#">쥬베룩 볼륨</a></li>
+              <li><a href="#">리쥬란 힐러</a></li>
+              <li><a href="#">엑소좀 케어</a></li>
+              <li><a href="#">릴리이드</a></li>
+              <li><a href="#">필로가 135</a></li>
+            </ul>
+          </li>
+          <li class="gnb-item">
+            <a href="#" class="depth1">색소 & 화이트닝</a>
+            <ul class="depth2">
+              <li><a href="#">피코 토닝</a></li>
+              <li><a href="#">듀얼 토닝</a></li>
+              <li><a href="#">기미 잡티 해결</a></li>
+              <li><a href="#">클라리티 II</a></li>
+              <li><a href="#">화이트닝 케어</a></li>
+            </ul>
+          </li>
+          <li class="gnb-item">
+            <a href="#" class="depth1">여드름 & 모공</a>
+            <ul class="depth2">
+              <li><a href="#">여드름 스케일링</a></li>
+              <li><a href="#">포텐자</a></li>
+              <li><a href="#">피코 프락셀</a></li>
+              <li><a href="#">골드 PTT</a></li>
+              <li><a href="#">흉터 모공 치료</a></li>
+            </ul>
+          </li>
+          <li class="gnb-item">
+            <a href="#" class="depth1">쁘띠 센터</a>
+            <ul class="depth2">
+              <li><a href="#">보톡스</a></li>
+              <li><a href="#">필러 교정</a></li>
+              <li><a href="#">인모드 리프팅</a></li>
+              <li><a href="#">윤곽 주사</a></li>
+              <li><a href="#">바디 조각술</a></li>
+            </ul>
+          </li>
+          <li class="gnb-item">
+            <a href="#" class="depth1">시그니처 케어</a>
+            <ul class="depth2">
+              <li><a href="#">웨딩 프로그램</a></li>
+              <li><a href="#">하이드라페이셜</a></li>
+              <li><a href="#">남성 전용 관리</a></li>
+              <li><a href="#">안티에이징</a></li>
+            </ul>
+          </li>
+          <li class="gnb-item">
+            <a href="#" class="depth1">커뮤니티</a>
+            <ul class="depth2">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">이달의 이벤트</a></li>
+              <li><a href="#">리얼 후기</a></li>
+              <li><a href="#">전후 사진</a></li>
+              <li><a href="#">온라인 상담</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Mega Menu Background Panel -->
+    <div class="gnb_sub" id="gnb-sub"></div>
+
+    <!-- Mobile Menu (Only visible on mobile when active) -->
+    <aside id="mobile-menu">
+      <div class="m_menu">
+        <ul class="depth1">
+          <li>
+            <a class="m-depth1" href="#"><span>병원 소개</span></a>
+            <ol class="m-depth2">
+              <li><a href="#">클리닉 철학</a></li>
+              <li><a href="#">의료진 소개</a></li>
+              <li><a href="#">첨단 장비 안내</a></li>
+              <li><a href="#">오시는 길</a></li>
+              <li><a href="#">내부 갤러리</a></li>
+            </ol>
+          </li>
+          <li>
+            <a class="m-depth1" href="#"><span>리프팅 센터</span></a>
+            <ol class="m-depth2">
+              <li><a href="#">울쎄라</a></li>
+              <li><a href="#">써마지 FLX</a></li>
+              <li><a href="#">슈링크 유니버스</a></li>
+              <li><a href="#">볼뉴머 리프팅</a></li>
+              <li><a href="#">실 리프팅</a></li>
+            </ol>
+          </li>
+          <li>
+            <a class="m-depth1" href="#"><span>스킨부스터</span></a>
+            <ol class="m-depth2">
+              <li><a href="#">쥬베룩 볼륨</a></li>
+              <li><a href="#">리쥬란 힐러</a></li>
+              <li><a href="#">엑소좀 케어</a></li>
+              <li><a href="#">릴리이드</a></li>
+              <li><a href="#">필로가 135</a></li>
+            </ol>
+          </li>
+          <li>
+            <a class="m-depth1" href="#"><span>색소 & 화이트닝</span></a>
+            <ol class="m-depth2">
+              <li><a href="#">피코 토닝</a></li>
+              <li><a href="#">듀얼 토닝</a></li>
+              <li><a href="#">기미 잡티 해결</a></li>
+              <li><a href="#">클라리티 II</a></li>
+              <li><a href="#">화이트닝 케어</a></li>
+            </ol>
+          </li>
+          <li>
+            <a class="m-depth1" href="#"><span>여드름 & 모공</span></a>
+            <ol class="m-depth2">
+              <li><a href="#">여드름 스케일링</a></li>
+              <li><a href="#">포텐자</a></li>
+              <li><a href="#">피코 프락셀</a></li>
+              <li><a href="#">골드 PTT</a></li>
+              <li><a href="#">흉터 모공 치료</a></li>
+            </ol>
+          </li>
+          <li>
+            <a class="m-depth1" href="#"><span>쁘띠 센터</span></a>
+            <ol class="m-depth2">
+              <li><a href="#">보톡스</a></li>
+              <li><a href="#">필러 교정</a></li>
+              <li><a href="#">인모드 리프팅</a></li>
+              <li><a href="#">윤곽 주사</a></li>
+              <li><a href="#">바디 조각술</a></li>
+            </ol>
+          </li>
+          <li>
+            <a class="m-depth1" href="#"><span>시그니처 케어</span></a>
+            <ol class="m-depth2">
+              <li><a href="#">웨딩 프로그램</a></li>
+              <li><a href="#">하이드라페이셜</a></li>
+              <li><a href="#">남성 전용 관리</a></li>
+              <li><a href="#">안티에이징</a></li>
+            </ol>
+          </li>
+          <li>
+            <a class="m-depth1" href="#"><span>커뮤니티</span></a>
+            <ol class="m-depth2">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">이달의 이벤트</a></li>
+              <li><a href="#">리얼 후기</a></li>
+              <li><a href="#">전후 사진</a></li>
+              <li><a href="#">온라인 상담</a></li>
+            </ol>
+          </li>
+        </ul>
+        <div class="info">
+          <p>AETHER CLINIC</p>
+          <h2>02-1234-5678</h2>
+          <address>
+            <p>서울특별시 강남구 테헤란로 123</p>
+          </address>
+        </div>
+      </div>
+    </aside>
+  </header>
+
+  <main>
+    <!-- 01. HERO -->
+    <section id="hero">
+      <div class="hero-bg" id="hero-bg"></div>
+      <div class="dim"></div>
+      <div class="hero-content" id="hero-content">
+        <p class="hero-label uppercase-spacing" id="hero-label">The Art of Tranquility</p>
+        <h2 class="serif" id="hero-title">머무는 모든 순간이 치유가 되는,<br>오직 당신만을 위한 안식처</h2>
+        <div class="deco-line"></div>
+        <p class="desc" id="hero-desc">복잡한 도심 속에서 마주하는 평온한 공간,<br>차원이 다른 프리미엄 메디컬 케어를 경험하세요.</p>
+        <div class="hero-pager">
+          <button class="pager-btn prev" id="hero-pager-prev"><i data-lucide="chevron-left"></i></button>
+          <div class="pager-nums">
+            <span class="num serif" id="hero-num">1</span>
+            <span class="pager-slash">/</span>
+            <span class="num serif total">3</span>
+          </div>
+          <button class="pager-btn next" id="hero-pager-next"><i data-lucide="chevron-right"></i></button>
+        </div>
+      </div>
+
+      <!-- Disabled arrow buttons per request -->
+
+
+    </section>
+
+    <!-- 02. PHILOSOPHY -->
+    <section id="philosophy">
+      <div class="container text-center">
+        <div class="section-header reveal">
+          <p class="uppercase-spacing emphasize">Aether's Philosophy</p>
+          <h3 class="section-title serif">본연의 아름다움을 깨우는 에테르만의 약속</h3>
+        </div>
+        <div class="grid-4 reveal-stagger" id="philo-grid">
+          <!-- HTML Cards -->
+          <article class="card">
+            <div class="img-box"><img src="img/s011.png"></div>
+            <h4>데이터 기반 맞춤 진단</h4>
+            <p>환자 개개인의 피부 두께, 탄력,<br>고민을 정밀하게 분석하여 이상적인<br>1:1 맞춤형 치료 플랜을 제안합니다.</p>
+          </article>
+          <article class="card">
+            <div class="img-box"><img src="img/s012.png"></div>
+            <h4>프리미엄 하이엔드 장비</h4>
+            <p>검증된 최첨단 오리지널 장비만을<br>도입하여 시술의 완성도와<br>안전성을 극대화합니다.</p>
+          </article>
+          <article class="card">
+            <div class="img-box"><img src="img/s013.png"></div>
+            <h4>섬세한 디자인</h4>
+            <p>수많은 임상 경험을 통해 다져진<br />정교한 핸드 스킬로, 자연스러운<br />아름다움을 찾아드립니다.</p>
+          </article>
+          <article class="card">
+            <div class="img-box"><img src="img/s014.png"></div>
+            <h4>정직한 안심 진료</h4>
+            <p>정품·정량 원칙을 준수하며,<br>철저한 사후 관리로 시술 후의<br>결과까지 책임집니다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03. ETHEREAL SPACE -->
+    <section id="space" class="bg-ethereal">
+      <div class="container space-header">
+        <div class="section-header align-left reveal">
+          <p class="uppercase-spacing overlay">Ethereal Space</p>
+          <h3 class="section-title serif">당신이 온전히 휴식할 수 있는<br>프라이빗한 환경을 지향합니다.</h3>
+          <p class="desc">머무는 순간조차 치유가 되는 공간, 최상의 시술 결과는 편안한 마음에서 시작됩니다.</p>
+        </div>
+        <div class="slide-controls ethereal-controls">
+          <button id="sp-prev"><i data-lucide="arrow-left"></i></button>
+          <button id="sp-next"><i data-lucide="arrow-right"></i></button>
+        </div>
+      </div>
+
+      <div class="container slider-hidden">
+        <div class="space-slider-wrap">
+          <div class="space-track" id="space-track">
+            <!-- JS injects spaces -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04. PRECISION -->
+    <section id="precision">
+      <div class="precision-wrap">
+        <!-- Text & Controls on Left -->
+        <div class="precision-info">
+          <div class="section-header align-left reveal">
+            <p class="uppercase-spacing emphasize">The Precision</p>
+            <h3 class="section-title serif">정교한 기술이 완성하는<br>미학의 정점</h3>
+            <p class="desc">에테르가 엄선한 하이엔드 오리지널 장비 시스템은<br>시술의 정밀함을 높여 최상의 결과를 구현합니다.</p>
+          </div>
+          <div class="slide-controls precision-controls">
+            <button id="eq-prev"><i data-lucide="chevron-left"></i></button>
+            <button id="eq-next"><i data-lucide="chevron-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Slider on Right -->
+        <div class="slider-hidden precision-slider">
+          <div class="eq-track" id="eq-track">
+            <!-- JS injects equipments -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05. DOCTOR -->
+    <section id="doctor">
+      <div class="container">
+        <h3 class="serif quote-text mb-60">
+          “당신이 가장 당신다워지는 순간,<br>그 가치를 가장 잘 아는 <span class="emphasize">에테르</span>가 함께하겠습니다.”
+        </h3>
+        <div class="doctor-presentation reveal-doctor">
+          <div class="doctor-img">
+            <div class="img-box">
+              <img src="img/doctor.png" alt="가리나 대표원장">
+            </div>
+          </div>
+          <div class="doctor-info">
+            <span class="sub-title">피부과 전문의</span>
+            <h3 class="serif section-title">대표원장 가리나</h3>
+            <div class="career-wrap">
+              <span class="career-title">약력</span>
+              <ul class="career-list">
+                <li>전) 존예클리닉 원장</li>
+                <li>한국대학교 의과대학 졸업</li>
+                <li>한국대학교병원 피부과 전문의 </li>
+                <li>한국대학교 의과대학원 피부과학 의학 석사</li>
+                <li>대한피부과학회 정회원 </li>
+                <li>대한피부과의사회 정회원 </li>
+                <li>대한임상피부치료연구회 정회원 </li>
+                <li>대한여드름주사학회 정회원 </li>
+                <li>대한피부항노화학회 정회원 </li>
+                <li>대한피부레이저학회 정회원</li>
+                <li>대한피부외과학회 정회원</li>
+              </ul>
+            </div>
+            <div class="doctor-bg-logo">
+              <img src="img/logo_sm.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07. LOCATION -->
+    <section id="location">
+      <div class="container">
+        <div class="location-flex reveal">
+          <div class="map-area-col">
+            <div class="section-header text-left mb-30">
+              <p class="uppercase-spacing overlay">Location & Clinic Hours</p>
+              <h3 class="section-title serif">찾아 오시는 길</h3>
+            </div>
+            <div id="map-area">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.5884773512003!2d127.04396761202307!3d37.5176230268137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca537c28f818f%3A0xb1a3c65eaefdd22e!2z7IKs66y07Iuk!5e0!3m2!1sko!2skr!4v1771611228158!5m2!1sko!2skr"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="address-row mt-20">
+              <i data-lucide="map-pin" class="emphasize"></i>
+              <p>서울특별시 강남구 도산대로 999길 아리따빌딩 3-4층<br><strong>에테르피부과의원</strong></p>
+            </div>
+            <div class="transport mt-20">
+              <div class="row"><i data-lucide="bus" class="emphasize"></i>
+                <p><strong>대중교통</strong> 수인분당선 압구정로데오역 3번 출구 도보 3분 거리</p>
+              </div>
+              <div class="row"><i data-lucide="car" class="emphasize"></i>
+                <p><strong>차량 이용시</strong> 1층 발렛 이용 가능 (만차시 주변 공영주차장 이용)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-area-col">
+            <div class="contact-box">
+              <h4 class="uppercase-spacing mt-40"><i data-lucide="phone-call" class="mr-10"></i>대표전화</h4>
+              <a class="phone-link serif">
+                02-588-5858
+              </a>
+              <p class="desc mt-10">자세한 문의사항은 원내로 전화주시면<br>상담 직원이 친절히 설명해 드리겠습니다.</p>
+            </div>
+            <div class="hours-box mt-60">
+              <h4 class="uppercase-spacing mb-10"><i data-lucide="clock" class="mr-10"></i>진료 시간 안내</h4>
+              <div class="hours-grid">
+                <ul class="hours-list">
+                  <li>
+                    <strong class="day pad-icon">월요일</strong>
+                    <span class="time">10:00 ~ 21:00 <small>(야간진료)</small></span>
+                  </li>
+                  <li>
+                    <strong class="day pad-icon">화 - 금</strong>
+                    <span class="time">10:00 ~ 19:00</span>
+                  </li>
+                  <li>
+                    <strong class="day pad-icon">토요일</strong>
+                    <span class="time">10:00 ~ 15:00 <small>(점심시간 없음)</small></span>
+                  </li>
+                  <li>
+                    <strong class="day pad-icon">점심시간</strong>
+                    <span class="time">13:00 ~ 14:00</span>
+                  </li>
+                </ul>
+                <p class="note pad-icon mt-10">※ 일요일, 공휴일 휴진입니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="f-inner container">
+      <div class="f-top">
+        <div class="f-info">
+          <div class="f-logo">
+            <img src="img/logo_wh.png" alt="AETHER CLINIC">
+          </div>
+          <p>상호: 에테르피부과의원 | 대표자: 가리나 | 사업자등록번호: 000-00-00000</p>
+          <p>주소: 서울특별시 강남구 도산대로 999길 아리따빌딩 3-4층 에테르피부과의원</p>
+          <p>대표전화: 02-588-5858 | 이메일: contact@aetherclinic.com</p>
+
+
+        </div>
+        <div class="f-sns">
+          <a href="#"><i data-lucide="instagram"></i></a>
+          <a href="#"><i data-lucide="monitor"></i></a> <!-- blog -->
+          <a href="#"><i data-lucide="youtube"></i></a>
+        </div>
+      </div>
+      <div class="f-bottom mt-40">
+        <p class="copy">© 2026 에테르피부과의원 All rights reserved.</p>
+        <div class="f-links">
+          <a href="#">개인정보처리방침</a>
+          <a href="#">개인정보수집이용동의</a>
+          <a href="#">이용약관</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    lucide.createIcons({
+      attrs: {
+        'stroke-width': 1
+      }
+    });
+  </script>
+</body>
+
+</html>
