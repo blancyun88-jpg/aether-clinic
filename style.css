@@ -1523,7 +1523,7 @@ footer {
 /* --- MOBILE (max-width: 768px) --- */
 @media(max-width: 768px) {
     .container {
-        padding: 0 15px;
+        padding: 0 20px;
     }
 
     #hero-title {
@@ -1531,7 +1531,7 @@ footer {
     }
 
     .section-title {
-        font-size: 1.4rem;
+        font-size: 1.35rem;
     }
 
     .slide-btn {
@@ -1617,5 +1617,9 @@ footer {
         font-size: 1.3rem;
     }
 
+
+    .card p {
+        font-size: 0.8rem;
+    }
 
 }
