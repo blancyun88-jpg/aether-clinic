@@ -1522,8 +1522,16 @@ footer {
 
 /* --- MOBILE (max-width: 768px) --- */
 @media(max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
     #hero-title {
-        font-size: 2rem;
+        font-size: 1.65rem;
+    }
+
+    .section-title {
+        font-size: 1.4rem;
     }
 
     .slide-btn {
@@ -1596,11 +1604,18 @@ footer {
 
 
     .doctor-info {
-        width: 93%;
+        width: 97%;
     }
 
     .doctor-img .img-box img {
         margin: 0 auto;
         width: 70%;
     }
+
+
+    .quote-text {
+        font-size: 1.3rem;
+    }
+
+
 }
